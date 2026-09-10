@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Silas — Shopify websites and e-commerce video editing portfolio." />
+  <title>Silas — Shopify & E-commerce Content Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#070908;--panel:#0d110f;--panel2:#111713;--text:#f3f5f3;--muted:#a6afa9;--line:#202821;--green:#b7f34a;--green2:#d7ff8a;--max:1180px;}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 80% -10%,rgba(183,243,74,.11),transparent 32%),var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.6} a{color:inherit;text-decoration:none} img,video{max-width:100%;display:block} button{font:inherit}
+    .wrap{width:min(calc(100% - 40px),var(--max));margin:auto}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-family:Manrope;font-weight:800;font-size:20px;letter-spacing:-.04em}.brand span{color:var(--green)}.navlinks{display:flex;gap:26px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--text)}
+    .hero{padding:92px 0 80px;display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}.eyebrow{color:var(--green);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.15em}.hero h1{font-family:Manrope;font-size:clamp(48px,7vw,88px);line-height:.98;letter-spacing:-.065em;margin:18px 0 25px;max-width:850px}.hero h1 em{font-style:normal;color:var(--green)}.hero p{font-size:19px;color:var(--muted);max-width:650px}.actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.btn{padding:13px 18px;border-radius:999px;border:1px solid var(--line);font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:8px}.btn.primary{background:var(--green);color:#0a0d08;border-color:var(--green)}.btn.primary:hover{background:var(--green2)}.btn.secondary:hover{border-color:#42513f}
+    .hero-card{background:linear-gradient(145deg,#141b15,#0b0e0c);border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:0 20px 80px rgba(0,0,0,.35)}.hero-card .mini{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}.hero-card h3{font-family:Manrope;font-size:30px;line-height:1.1;margin:12px 0}.statrow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:25px}.stat{border:1px solid var(--line);background:#0b0f0c;border-radius:18px;padding:16px}.stat strong{display:block;font-family:Manrope;font-size:24px}.stat span{font-size:12px;color:var(--muted)}
+    section{padding:80px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}.section-head h2{font-family:Manrope;font-size:42px;line-height:1.05;letter-spacing:-.05em;margin:8px 0}.section-head p{color:var(--muted);max-width:520px;margin:0}.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.service{border:1px solid var(--line);background:linear-gradient(145deg,#0e130f,#0a0d0b);border-radius:24px;padding:28px}.service .num{color:var(--green);font-size:13px;font-weight:700}.service h3{font-family:Manrope;font-size:27px;margin:10px 0}.service p{color:var(--muted)}.service ul{padding:0;margin:20px 0 0;list-style:none;display:grid;gap:8px}.service li:before{content:'✓';color:var(--green);margin-right:10px;font-weight:800}
+    .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.work{border:1px solid var(--line);border-radius:24px;overflow:hidden;background:#0b0f0c;cursor:pointer;transition:.25s transform,.25s border-color}.work:hover{transform:translateY(-4px);border-color:#3a4936}.media{aspect-ratio:16/10;background:#111;position:relative;overflow:hidden}.media img{width:100%;height:100%;object-fit:cover;transition:.35s transform}.work:hover .media img{transform:scale(1.025)}.play{position:absolute;left:18px;bottom:18px;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#0a0d08;font-weight:800;box-shadow:0 8px 30px rgba(0,0,0,.4)}.play:after{content:'▶';font-size:14px;margin-left:2px}.work-body{padding:21px}.work-body .type{color:var(--green);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.13em}.work-body h3{font-family:Manrope;font-size:23px;line-height:1.15;margin:7px 0}.work-body p{color:var(--muted);font-size:14px;margin:0}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}.tag{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:5px 9px;color:#bdc6bf}
+    .featured{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}.featurebox{border:1px solid var(--line);border-radius:24px;padding:32px;background:linear-gradient(145deg,#111710,#0a0d0b)}.featurebox h3{font-family:Manrope;font-size:32px;line-height:1.1;margin:10px 0 15px}.featurebox p{color:var(--muted)}.flow{display:grid;gap:10px;margin-top:24px}.flow div{border:1px solid var(--line);border-radius:14px;padding:12px 14px;background:#0b0f0c}.flow b{color:var(--green);font-size:12px;text-transform:uppercase;letter-spacing:.1em;margin-right:8px}.placeholder{min-height:100%;display:grid;place-items:center;border:1px dashed #344031;border-radius:24px;background:repeating-linear-gradient(45deg,#0b0f0c,#0b0f0c 10px,#0d120e 10px,#0d120e 20px);padding:40px;text-align:center}.placeholder h4{font-family:Manrope;font-size:24px;margin:0 0 8px}.placeholder p{color:var(--muted);max-width:400px}
+    .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.about h2{font-family:Manrope;font-size:42px;line-height:1.05;letter-spacing:-.05em;margin:8px 0}.about p{color:var(--muted);font-size:17px}.principles{display:grid;grid-template-columns:1fr 1fr;gap:12px}.principle{border:1px solid var(--line);padding:20px;border-radius:18px}.principle strong{font-family:Manrope;display:block;margin-bottom:5px}.principle span{font-size:13px;color:var(--muted)}
+    .cta{padding:70px 0}.cta-inner{border:1px solid #31402b;background:radial-gradient(circle at 90% 20%,rgba(183,243,74,.15),transparent 35%),#0d120e;border-radius:30px;padding:55px;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font-family:Manrope;font-size:clamp(36px,5vw,58px);line-height:1;letter-spacing:-.05em;margin:0 0 12px}.cta p{color:var(--muted);margin:0;max-width:600px}.footer{border-top:1px solid var(--line);padding:25px 0 40px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px}
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,.78);backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;padding:20px;z-index:20}.modal.open{display:flex}.modalbox{width:min(980px,100%);background:#0b0f0c;border:1px solid #283329;border-radius:24px;overflow:hidden;position:relative}.modal video{width:100%;max-height:78vh;background:#000}.close{position:absolute;right:12px;top:12px;width:40px;height:40px;border:1px solid #354036;border-radius:50%;background:rgba(0,0,0,.65);color:#fff;z-index:2;cursor:pointer;font-size:20px}.modalinfo{padding:18px 20px}.modalinfo h3{font-family:Manrope;margin:0 0 4px}.modalinfo p{margin:0;color:var(--muted);font-size:14px}
+    @media(max-width:800px){.navlinks{display:none}.hero,.about,.featured{grid-template-columns:1fr;gap:35px}.hero{padding-top:65px}.hero-card{max-width:620px}.service-grid,.work-grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:12px}.cta-inner{padding:35px;display:block}.cta .btn{margin-top:22px}.footer{display:block}.footer div+div{margin-top:8px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#top">SILAS<span>.</span></a>
+    <nav class="navlinks"><a href="#services">Services</a><a href="#shopify">Shopify</a><a href="#video">Video</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">Shopify × E-commerce Content</div>
+        <h1>I build better stores & <em>better product content.</em></h1>
+        <p>I’m Silas, a Shopify specialist and video editor helping e-commerce brands present their products clearly, professionally and persuasively.</p>
+        <div class="actions"><a class="btn primary" href="#video">View my work ↗</a><a class="btn secondary" href="#contact">Work with me</a></div>
+      </div>
+      <aside class="hero-card">
+        <div class="mini">What I bring</div>
+        <h3>One creative partner for the storefront and the content.</h3>
+        <p>Shopify design, product pages, conversion-focused improvements and short-form product videos.</p>
+        <div class="statrow"><div class="stat"><strong>Shopify</strong><span>Store design & optimization</span></div><div class="stat"><strong>Video</strong><span>Ads & social content</span></div></div>
+      </aside>
+    </section>
+
+    <section class="wrap" id="services">
+      <div class="section-head"><div><div class="eyebrow">Services</div><h2>Built for e-commerce.</h2></div><p>Focused services that help a brand look stronger, communicate its product faster and create content consistently.</p></div>
+      <div class="service-grid">
+        <article class="service"><div class="num">01 / SHOPIFY</div><h3>Store Design & Optimization</h3><p>Professional storefront improvements focused on clarity, usability and conversion opportunities.</p><ul><li>Homepage design/redesign</li><li>Product-page optimization</li><li>Mobile UX improvements</li><li>CTA & content hierarchy</li><li>Storefront visual polish</li></ul></article>
+        <article class="service"><div class="num">02 / VIDEO</div><h3>Product & Social Video</h3><p>Short-form content designed to stop the scroll, explain the product and give brands more creative assets.</p><ul><li>Product advertisements</li><li>Reels & TikTok editing</li><li>UGC-style edits</li><li>Motion/text graphics</li><li>Talking-head & subtitle edits</li></ul></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="shopify">
+      <div class="section-head"><div><div class="eyebrow">Shopify</div><h2>Store work.</h2></div><p>Your Shopify case studies will live here. We’ll replace this section with your actual redesigns as we build them.</p></div>
+      <div class="featured">
+        <div class="featurebox"><div class="eyebrow">Featured case study</div><h3>From storefront to product page.</h3><p>A future case study showing the thinking behind a Shopify redesign: the problem, the changes, and the customer journey.</p><div class="flow"><div><b>01</b> Audit the current experience</div><div><b>02</b> Redesign the visual hierarchy</div><div><b>03</b> Improve product communication</div><div><b>04</b> Optimize the mobile journey</div></div></div>
+        <div class="placeholder"><div><h4>Shopify projects coming next</h4><p>We’ll add your real Shopify screenshots, before/after comparisons and case-study details here. No fake client results.</p><a class="btn secondary" href="#contact">Build a project with me</a></div></div>
+      </div>
+    </section>
+
+    <section class="wrap" id="video">
+      <div class="section-head"><div><div class="eyebrow">Video Editing</div><h2>Selected work.</h2></div><p>A selection of product, promotional, automotive, food and talking-head edits. Click any project to play it.</p></div>
+      <div class="work-grid">
+        <article class="work" data-video="assets/videos/1000146920.mp4" data-title="All-in-One Bluetooth Selfie Stick Tripod" data-desc="Product advertisement • E-commerce • Motion graphics"><div class="media"><img src="assets/thumbs/1000146920.jpg" alt="Selfie stick tripod product video thumbnail"><div class="play"></div></div><div class="work-body"><div class="type">01 / Product Advertisement</div><h3>All-in-One Bluetooth Selfie Stick Tripod</h3><p>Product-focused commercial edit built for social and e-commerce.</p><div class="tags"><span class="tag">Product Ads</span><span class="tag">E-commerce</span><span class="tag">Motion Graphics</span></div></div></article>
+        <article class="work" data-video="assets/videos/1000186688.mp4" data-title="Multi-Product Promotional Video" data-desc="Product showcase • E-commerce • Commercial editing"><div class="media"><img src="assets/thumbs/1000186688.jpg" alt="Multi-product promotional video thumbnail"><div class="play"></div></div><div class="work-body"><div class="type">02 / E-commerce Product Showcase</div><h3>Multi-Product Promotional Video</h3><p>Visual sequencing and product presentation across multiple items.</p><div class="tags"><span class="tag">Product Showcase</span><span class="tag">Commercial</span><span class="tag">Social</span></div></div></article>
+        <article class="work" data-video="assets/videos/1000203548.mp4" data-title="Portable Air Compressor" data-desc="Product demonstration • Social ad • Feature highlighting"><div class="media"><img src="assets/thumbs/1000203548.jpg" alt="Portable air compressor product ad thumbnail"><div class="play"></div></div><div class="work-body"><div class="type">03 / Product Advertisement</div><h3>Portable Air Compressor</h3><p>Product demonstration structured around use case and features.</p><div class="tags"><span class="tag">Product Ads</span><span class="tag">Demonstration</span><span class="tag">Social</span></div></div></article>
+        <article class="work" data-video="assets/videos/1000203543.mp4" data-title="RGB Car Interior Lighting" data-desc="Automotive promo • Product visualization • Social content"><div class="media"><img src="assets/thumbs/1000203543.jpg" alt="RGB car interior lighting video thumbnail"><div class="play"></div></div><div class="work-body"><div class="type">04 / Automotive Product Promo</div><h3>RGB Car Interior Lighting</h3><p>Automotive product visualization with a promotional social-first feel.</p><div class="tags"><span class="tag">Automotive</span><span class="tag">Product Promo</span><span class="tag">Social</span></div></div></article>
+        <article class="work" data-video="assets/videos/1000186059.mp4" data-title="Sweetness Meets Creativity" data-desc="Food promotion • Product storytelling • Social video"><div class="media"><img src="assets/thumbs/1000186059.jpg" alt="Food promotional video thumbnail"><div class="play"></div></div><div class="work-body"><div class="type">05 / Food & Product Promotion</div><h3>Sweetness Meets Creativity</h3><p>Promotional food edit focused on visual appeal and product presentation.</p><div class="tags"><span class="tag">Food</span><span class="tag">Promotion</span><span class="tag">Social</span></div></div></article>
+        <article class="work" data-video="assets/videos/1000254654.mp4" data-title="Bilingual Educational Video" data-desc="Talking head • English/Chinese subtitles • Educational content"><div class="media"><img src="assets/thumbs/1000254654.jpg" alt="Bilingual talking-head video thumbnail"><div class="play"></div></div><div class="work-body"><div class="type">06 / Talking Head & Subtitles</div><h3>Bilingual Educational Video</h3><p>Speaker-focused edit with synchronized English and Chinese subtitles.</p><div class="tags"><span class="tag">Talking Head</span><span class="tag">Subtitles</span><span class="tag">Educational</span></div></div></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="about">
+      <div class="about"><div><div class="eyebrow">About Silas</div><h2>Design with a reason.</h2></div><div><p>I combine Shopify website work with video editing so I can think about an e-commerce brand from both sides: what happens when someone lands on the store, and what convinces them to stop scrolling and learn about the product.</p><div class="principles"><div class="principle"><strong>Clarity</strong><span>Make the product and value proposition easy to understand.</span></div><div class="principle"><strong>Conversion</strong><span>Reduce friction and make the next action obvious.</span></div><div class="principle"><strong>Content</strong><span>Create visual assets that fit modern social platforms.</span></div><div class="principle"><strong>Consistency</strong><span>Build a brand experience that feels intentional.</span></div></div></div></div>
+    </section>
+
+    <section class="wrap cta" id="contact"><div class="cta-inner"><div><div class="eyebrow">Have a project?</div><h2>Let's make your store look and sell better.</h2><p>Tell me what you're building, what isn't working, or what content you need. I'll help you identify the best place to start.</p></div><div><a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Email me ↗</a><a class="btn secondary" href="https://wa.me/YOURNUMBER" style="margin-top:10px">WhatsApp ↗</a></div></div></section>
+  </main>
+
+  <footer class="wrap footer"><div>© <span id="year"></span> Silas. All rights reserved.</div><div>Shopify • E-commerce • Video Editing</div></footer>
+
+  <div class="modal" id="modal" aria-hidden="true"><div class="modalbox"><button class="close" id="close" aria-label="Close">×</button><video id="player" controls playsinline></video><div class="modalinfo"><h3 id="modalTitle"></h3><p id="modalDesc"></p></div></div></div>
+
+  <script>
+    const modal=document.getElementById('modal'),player=document.getElementById('player'),title=document.getElementById('modalTitle'),desc=document.getElementById('modalDesc');
+    document.querySelectorAll('.work').forEach(card=>card.addEventListener('click',()=>{player.src=card.dataset.video;title.textContent=card.dataset.title;desc.textContent=card.dataset.desc;modal.classList.add('open');modal.setAttribute('aria-hidden','false');player.play().catch(()=>{});}));
+    function closeModal(){player.pause();player.removeAttribute('src');player.load();modal.classList.remove('open');modal.setAttribute('aria-hidden','true')}
+    document.getElementById('close').addEventListener('click',closeModal); modal.addEventListener('click',e=>{if(e.target===modal)closeModal()}); document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
